@@ -22,7 +22,8 @@ public class TestClient<T> extends BaseEsClient<T> implements BaseEsService<T> {
             List<IndexField> fields = new ArrayList<IndexField>();
 
             fields.add(new IndexField("id", "long", ElasticSearchFactory.INDEX_NOT_ANALYZED_VALUE));
-            fields.add(new IndexField("title", "title", ElasticSearchFactory.INDEX_NO_VALUE));
+            fields.add(new IndexField("title", "string", ElasticSearchFactory.INDEX_ANALYZED_VALUE));
+            fields.add(new IndexField("content", "string", ElasticSearchFactory.INDEX_NO_VALUE));
 
             // 创建索引
             elasticSearchFactory.createIndex(INDEXNAME, DOCUMENTTYPE, fields, 90, true);
