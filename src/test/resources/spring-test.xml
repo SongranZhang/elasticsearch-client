@@ -15,7 +15,7 @@
         </property>
     </bean>
     <bean id="testEsClient" class="com.linkedkeeper.elasticsearch.client.TestClient">
-        <property name="esFactory" ref="elasticSearchFactory"/>
+        <property name="elasticSearchFactory" ref="elasticSearchFactory"/>
     </bean>
 
 

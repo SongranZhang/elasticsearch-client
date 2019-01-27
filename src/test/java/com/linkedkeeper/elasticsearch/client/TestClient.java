@@ -30,7 +30,7 @@ public class TestClient<T> extends BaseEsClient<T> implements BaseEsService<T> {
 
             success = true;
         } catch (Exception e) {
-            logger.error("ForumThreadEsClient createIndex e -> ", e);
+            logger.error("TestEsClient createIndex e -> ", e);
         }
         return success;
     }

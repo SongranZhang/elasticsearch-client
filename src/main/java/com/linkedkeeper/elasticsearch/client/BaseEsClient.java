@@ -12,7 +12,7 @@ public abstract class BaseEsClient<T> {
 
     protected ElasticSearchFactory elasticSearchFactory;
 
-    public void setEsFactory(ElasticSearchFactory elasticSearchFactory) {
+    public void setElasticSearchFactory(ElasticSearchFactory elasticSearchFactory) {
         this.elasticSearchFactory = elasticSearchFactory;
     }
 
